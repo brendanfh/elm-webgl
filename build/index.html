@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elm WebGL Experiment</title>
+        
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <div id="container"></div>
+        
+        <script>
+            window.addEventListener("load", function(e) {
+                var container = document.getElementById("container");
+                
+                var app = Elm.Main.embed(container);
+            });
+        </script>
+    </body>
+</html>
